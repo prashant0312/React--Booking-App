@@ -11,12 +11,12 @@ import SearchItem from "../../components/SearchItem/SearchItem";
 function List() {
   const location = useLocation();
 
-  const [getDestination, setDestination] = useState(
+  const [getDestination] = useState(
     location.state.getDestination
   );
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
-  const [getOptions, setOptions] = useState(location.state.getOptions);
+  const [getOptions] = useState(location.state.getOptions);
 
   return (
     <div>
